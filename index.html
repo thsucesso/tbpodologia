@@ -240,22 +240,44 @@
 
         <!-- 4. SEÇÃO CONTATO -->
         <section id="contato" class="py-20 lg:py-28 bg-white border-t border-gray-100">
-            <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                <div class="w-16 h-16 bg-whatsapp-50 rounded-full flex items-center justify-center mx-auto mb-6">
-                    <i class="fa-brands fa-whatsapp text-3xl text-whatsapp-500"></i>
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <div class="max-w-3xl mx-auto">
+                    <div class="w-16 h-16 bg-whatsapp-50 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fa-brands fa-whatsapp text-3xl text-whatsapp-500"></i>
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Agende seu atendimento</h2>
+                    <p class="text-lg text-gray-600 mb-10 leading-relaxed">
+                        Entre em contato pelo WhatsApp para consultar horários disponíveis e agendar seu atendimento.
+                    </p>
+                    
+                    <a href="https://wa.me/5541992253750?text=Ol%C3%A1%21%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20atendimento%20e%20hor%C3%A1rios%20dispon%C3%ADveis." 
+                       target="_blank" 
+                       id="btn-whatsapp-contact"
+                       data-track="whatsapp"
+                       class="inline-flex items-center justify-center gap-3 bg-whatsapp-500 hover:bg-whatsapp-600 text-white text-lg font-semibold px-10 py-5 rounded-xl transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5 w-full sm:w-auto mb-16">
+                        <i class="fa-brands fa-whatsapp text-2xl"></i> Agendar pelo WhatsApp
+                    </a>
                 </div>
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Agende seu atendimento</h2>
-                <p class="text-lg text-gray-600 mb-10 leading-relaxed">
-                    Entre em contato pelo WhatsApp para consultar horários disponíveis e agendar seu atendimento.
-                </p>
-                
-                <a href="https://wa.me/5541992253750?text=Ol%C3%A1%21%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20atendimento%20e%20hor%C3%A1rios%20dispon%C3%ADveis." 
-                   target="_blank" 
-                   id="btn-whatsapp-contact"
-                   data-track="whatsapp"
-                   class="inline-flex items-center justify-center gap-3 bg-whatsapp-500 hover:bg-whatsapp-600 text-white text-lg font-semibold px-10 py-5 rounded-xl transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5 w-full sm:w-auto">
-                    <i class="fa-brands fa-whatsapp text-2xl"></i> Agendar pelo WhatsApp
-                </a>
+
+                <!-- Google Maps Iframe -->
+                <div class="w-full rounded-2xl overflow-hidden shadow-sm border border-gray-200">
+                    <iframe 
+                        src="https://maps.google.com/maps?q=R.+Al%C3%A9cio+Masson,+131+-+Alto+Boqueir%C3%A3o,+Curitiba+-+PR,+81770-060&t=&z=16&ie=UTF8&iwloc=&output=embed" 
+                        class="w-full h-[350px] md:h-[450px] border-0" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                    <div class="bg-gray-50 py-4 px-6 border-t border-gray-200 text-left flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                        <div>
+                            <h4 class="font-bold text-gray-900">Nossa Localização</h4>
+                            <p class="text-gray-600 text-sm">R. Alécio Masson, 131 - Alto Boqueirão, Curitiba - PR</p>
+                        </div>
+                        <a href="https://maps.app.goo.gl/g3Va5gmYBR9rE1iX9" target="_blank" class="inline-flex items-center gap-2 text-brand-600 font-medium hover:text-brand-700 transition-colors">
+                            Abrir no Google Maps <i class="fa-solid fa-arrow-up-right-from-square text-sm"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
