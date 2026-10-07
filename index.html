@@ -58,7 +58,7 @@
                     <img src="images/logo.jpg" alt="TB Podologia Logo" class="h-12 w-auto rounded-md shadow-sm object-cover" onerror="this.src='https://ui-avatars.com/api/?name=TB&background=14b8a6&color=fff&rounded=true&bold=true'">
                     <div class="flex flex-col leading-none">
                         <span class="font-bold text-xl tracking-tight text-gray-900">TB Podologia</span>
-                        <span class="font-medium text-[0.7rem] tracking-widest text-brand-600 uppercase mt-1">Clínica</span>
+                        <span class="font-medium text-[0.7rem] tracking-widest text-brand-600 uppercase mt-1">Consultório</span>
                     </div>
                 </div>
                 
@@ -95,30 +95,28 @@
     <main class="flex-grow">
         <!-- 1. SEÇÃO PRINCIPAL / HERO -->
         <section id="inicio" class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden bg-white border-b border-gray-100">
-            <!-- Marca-d'água discreta (opacidade 8%) -->
-            <div class="absolute inset-0 z-0 flex items-center justify-center lg:justify-end lg:pr-32 opacity-10 pointer-events-none select-none">
-                <!-- Usando a logo, convertida para escala de cinza e com blend-mode para se mesclar suavemente -->
-                <img src="images/logo.jpg" alt="Marca d'água TB" class="w-[300px] md:w-[500px] lg:w-[600px] h-auto object-contain filter grayscale mix-blend-multiply opacity-80" onerror="this.style.display='none'">
-                <!-- Fallback se a imagem não carregar: -->
-                <div class="absolute text-[300px] font-black text-gray-900 opacity-10 hidden" id="fallback-watermark">TB</div>
-            </div>
-
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-                <div class="max-w-3xl">
-                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-peach-light border border-peach-main/30 text-brand-700 font-medium text-sm mb-6">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col items-center text-center">
+                <div class="max-w-3xl relative">
+                    <!-- Marca-d'água centralizada atrás do texto -->
+                    <div class="absolute inset-0 z-[-1] flex items-center justify-center opacity-10 pointer-events-none select-none">
+                        <img src="images/logo.jpg" alt="Marca d'água TB" class="w-[300px] md:w-[450px] lg:w-[500px] h-auto object-contain filter grayscale mix-blend-multiply opacity-80" onerror="this.style.display='none'">
+                        <div class="absolute text-[300px] font-black text-gray-900 opacity-10 hidden" id="fallback-watermark">TB</div>
+                    </div>
+                    
+                    <div class="inline-flex items-center justify-center gap-2 px-4 py-2 rounded-full bg-peach-light border border-peach-main/30 text-brand-700 font-medium text-sm mb-6">
                         <i class="fa-solid fa-location-dot text-peach-main"></i>
                         <span>Alto Boqueirão • Curitiba • Mais de 10 anos de experiência clínica</span>
                     </div>
                     
-                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6 tracking-tight">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6 tracking-tight mx-auto">
                         Cuidado especializado para os seus pés
                     </h1>
                     
-                    <p class="text-lg md:text-xl text-gray-600 mb-10 leading-relaxed max-w-2xl">
+                    <p class="text-lg md:text-xl text-gray-600 mb-10 leading-relaxed max-w-2xl mx-auto">
                         Atendimento em podologia clínica para adultos, idosos e crianças, com foco em unha encravada, pé diabético, calosidades, micoses e prevenção.
                     </p>
                     
-                    <div class="flex flex-col sm:flex-row gap-4">
+                    <div class="flex flex-col sm:flex-row justify-center gap-4">
                         <a href="https://wa.me/5541992253750?text=Ol%C3%A1%21%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20atendimento%20e%20hor%C3%A1rios%20dispon%C3%ADveis." 
                            target="_blank" 
                            id="btn-whatsapp-hero"
